@@ -5,10 +5,13 @@
     padding-top: 135px;
     &__name {
         position: absolute;
-        right: 535px;
+        right: 537px;
         top: 125px;
         z-index: 2;
         @include before_circle;
+        &:before {
+            left: -6%;
+        }
     }
     &__title {
         width: 535px;
