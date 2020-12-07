@@ -1,5 +1,5 @@
 .hamburger {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 30px;
     height: 21px;
@@ -70,12 +70,13 @@
             border: 1px solid #000000;
             border-radius: 100%;
             transition: all 0.5s;
-        }
-        &:hover {
-            &:before {
-                background-color: rgba($color: #ffffff70, $alpha: 1.0);
+            &:hover {
+                &:before {
+                    background-color: rgba($color: #ffffff70, $alpha: 1.0);
+                }
             }
         }
+       
         a {
             color: white;
         }

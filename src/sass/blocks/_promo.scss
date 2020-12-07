@@ -4,35 +4,31 @@
     background: url('../img/bg.jpg') no-repeat 50%/cover;
     padding-top: 135px;
     &__name {
-        position: absolute;
-        right: 537px;
-        top: 125px;
+        position: relative;
+        margin-top: 64px;
+        margin-left: 608px;
+        padding-left: 14px;
         z-index: 2;
         @include before_circle;
-        &:before {
-            left: -6%;
-        }
     }
     &__title {
         width: 535px;
         margin-top: 10px;
-        position: absolute;
-        top: 149px;
-        right: 217px;
+        margin-left: 608px;
     }
     &__btns {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 250px;
-        position: absolute;
-        top: 310px;
-        right: 502px;
+        margin-left: 608px;
+        margin-top: 25px;
     }
     
     &__link {
         color: #ffffff;
         font-weight: bold;
+        font-size: 14px;
         &:hover {
             color: #ffffff;
             text-decoration: none;

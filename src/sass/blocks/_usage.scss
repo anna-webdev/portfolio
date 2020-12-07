@@ -1,0 +1,42 @@
+.usage {
+    padding-top: 120px;
+    background: linear-gradient(89.51deg, rgba(151, 19, 146, 0.33) -4.1%, rgba(20, 48, 198, 0.33) 106.39%);
+    &__title {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, minmax(270px, auto));
+        gap: 13px 13px;
+        grid-auto-rows: minmax(270px, auto);
+    }
+    &__item {
+        padding: 30px 30px 25px 30px;
+        border: 1px solid #000;
+        &-head {
+            margin-top: 20px;
+        }
+        &-body {
+            margin-top: 15px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    .margintop44 {
+        margin-top: 44px;
+    }
+    .margintop33 {
+        margin-top: 40px;
+    }
+}
