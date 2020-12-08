@@ -9,3 +9,11 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+
+const numbers = document.querySelectorAll('.rating__item-number'),
+    lines = document.querySelectorAll('.rating__item-line .rating__item-color');
+
+numbers.forEach((item, i) => {
+    lines[i].style.width = item.innerHTML;
+});

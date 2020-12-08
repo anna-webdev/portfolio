@@ -1,0 +1,41 @@
+.rating {
+    padding-top: 120px;
+    background: linear-gradient(89.51deg, rgba(151, 19, 146, 0.33) -4.1%, rgba(20, 48, 198, 0.33) 106.39%);
+    &__wrapper {
+        margin-left: 203px;
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(2, minmax(70px, auto));
+        grid-auto-columns: 350px;
+        column-gap: 45px;
+        row-gap: 30px;
+    }
+    &__item {
+        position: relative;
+        display: grid;
+        grid-template-columns: 170px 35px;
+        grid-template-rows: 21px 14px;
+        justify-content: space-between;
+        align-content: space-between;
+        &-text {
+            position: relative;
+            padding-left: 13px;
+            @include before_circle;
+            &:before {
+                top: -8px;
+            }
+        }
+        &-line {
+            grid-column: 1/3;
+            width: 100%;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+        }
+        &-color {      
+            height: 14px;
+            background: $main-color;
+            border-radius: 4px;
+        }
+    }
+}
