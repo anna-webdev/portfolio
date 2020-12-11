@@ -381,11 +381,11 @@
 
                 <a href="#" class="portfolio__wrapper-item"><img src="img/works/bread.jpg" alt="bread"></a>
 
-                <a href="#" class="portfolio__wrapper-item vertical"><img src="img/works/plans.jpg" alt="plans"></a>
+                <a href="#" class="vertical portfolio__wrapper-item"><img src="img/works/plans.jpg" alt="plans"></a>
 
                 <a href="#" class="portfolio__wrapper-item"><img src="img/works/ipad.jpg" alt="ipad"></a>
 
-                <a href="#" class="portfolio__wrapper-item horisontal"><img src="img/works/wp.jpg" alt="wordpress"></a>
+                <a href="#" class="horisontal portfolio__wrapper-item"><img src="img/works/wp.jpg" alt="wordpress"></a>
             </div>
         </div>
     </section>
@@ -433,15 +433,15 @@
                         Любым удобным для вас способом:
                     </div>
                     <div class="contacts__social">
-                        <a href="" class="contacts__link">
+                        <a href="#" class="contacts__link">
                             <img src="icons/contacts/Facebook.svg" alt="facebook">
                         </a>
 
-                        <a href="" class="contacts__link">
+                        <a href="#" class="contacts__link">
                             <img src="icons/contacts/Telegram.svg" alt="telegram">
                         </a>
 
-                        <a href="" class="contacts__link">
+                        <a href="#" class="contacts__link">
                             <img src="icons/contacts/Instagram.svg" alt="instagram">
                         </a>
                     </div>
@@ -450,12 +450,12 @@
                     </div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
 
                         <div class="contacts__input">
-                            <input name="email" id="mail" type="email">
+                            <input required name="email" id="mail" type="email">
                             <label for="mail">Ваша почта</label>
                         </div>
 
@@ -463,7 +463,13 @@
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <button class="btn">Отправить сообщение</button>
+                        <div class="contacts__triggers">
+                            <button class="contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/privacy.html">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
