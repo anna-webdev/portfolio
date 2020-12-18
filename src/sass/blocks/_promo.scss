@@ -1,12 +1,11 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url('../img/bg.jpg') no-repeat 50%/cover;
+    background: linear-gradient(279.96deg, #A81BB5 -6.66%, #22147A 108.93%);
     padding-top: 135px;
     &__name {
         position: relative;
-        margin-top: 64px;
-        margin-left: 608px;
+        margin-top: 15vh;
         padding-left: 14px;
         z-index: 2;
         @include before_circle;
@@ -14,14 +13,12 @@
     &__title {
         width: 535px;
         margin-top: 10px;
-        margin-left: 608px;
     }
     &__btns {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 250px;
-        margin-left: 608px;
+        width: 270px;
         margin-top: 25px;
     }
     
@@ -34,4 +31,32 @@
             text-decoration: none;
         }
     }
+    &__photo {
+        height: 91.25vh;
+        position: absolute;
+        top: 8.75vh;
+        right: 250px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: -40%;
+            height: 100%;
+            width: 150%;
+            border: 1px solid rgba(255, 255, 255, 0.26);
+            border-radius: 100%;
+            z-index: 0;
+        }
+        img {
+            z-index: 1;
+            height: 100%;
+            filter: drop-shadow(120px 0px 200px rgba(0, 0, 0, 0.25));
+            cursor: pointer;
+            transition: all 0.7s;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+    }
+    
 }

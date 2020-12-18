@@ -1,0 +1,27 @@
+.privacy {
+    padding: 60px 0 60px 0;
+    background: linear-gradient(89.51deg, rgba(151, 19, 146, 0.33) -4.1%, rgba(20, 48, 198, 0.33) 106.39%);
+    &__main {
+        color: rgb(52, 4, 61);
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__point {
+        padding-left: 30px;
+        position: relative;
+        @include before-circle;
+        &:before {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 8px;
+        }
+    }
+    ul {
+        list-style-type: none;
+        li {
+            margin-top: 20px;
+        }
+    }
+}
