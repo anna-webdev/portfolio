@@ -6,20 +6,27 @@
     &__name {
         position: relative;
         margin-top: 15vh;
+        margin-left: 40px;
         padding-left: 14px;
         z-index: 2;
         @include before_circle;
     }
     &__title {
+        position: relative;
         width: 535px;
         margin-top: 10px;
+        margin-left: 40px;
+        z-index: 2;
     }
     &__btns {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 270px;
         margin-top: 25px;
+        margin-left: 40px;
+        z-index: 2;
     }
     
     &__link {
@@ -41,7 +48,7 @@
             position: absolute;
             left: -40%;
             height: 100%;
-            width: 150%;
+            width: 138%;
             border: 1px solid rgba(255, 255, 255, 0.26);
             border-radius: 100%;
             z-index: 0;
