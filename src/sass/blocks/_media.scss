@@ -42,6 +42,11 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            margin-left: 25px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -73,6 +78,22 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            margin-left: 0;
+        }
+        &__educate {
+            grid-template-columns: repeat(2, 360px);
+        }
+        &__item {
+            &-java {
+                &:before {
+                    width: 403px;
+                    left: -360px;
+                }
+        }
+    }
+}
 }
 
 @media (max-width: 768px) {
@@ -118,6 +139,29 @@
                 column-gap: 20px;
             }
         }
+    }
+    .resume {
+        &__subtitle {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .divider {
+            margin-top: 15px;
+        }
+        &__educate {
+            margin: 0 auto;
+            grid-template-columns: 520px;
+        }
+        &__item {
+            &-java {
+                grid-row: 2 / 3;
+                grid-column: 1 / 2;
+                &:before {
+                    width: 43px;
+                    left: 0;
+                }
+        }
+    }
     }
 }
 
@@ -178,6 +222,20 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__educate {
+            grid-template-columns: 1fr;
+        }
+        &__item {
+            &-java {
+                &:after {
+                height: calc(100% + 20px);
+                top: -20px;
+                }
+            }
         }
     }
 }
