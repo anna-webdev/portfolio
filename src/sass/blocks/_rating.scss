@@ -1,8 +1,11 @@
 .rating {
-    padding-top: 120px;
+    padding-top: 100px;
     background: linear-gradient(89.51deg, rgba(151, 19, 146, 0.33) -4.1%, rgba(20, 48, 198, 0.33) 106.39%);
+    &__margin {
+        width: 745px;
+        margin: 0 auto;
+    }
     &__wrapper {
-        margin-left: 203px;
         display: grid;
         grid-template-columns: repeat(2, 350px);
         grid-template-rows: repeat(2, minmax(70px, auto));
