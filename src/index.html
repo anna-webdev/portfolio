@@ -332,7 +332,7 @@
         </div>
     </section>
 
-    <!-- <section class="portfolio">
+    <section class="portfolio">
         <div class="container">
             <h2 class="title title_fs16 title_black portfolio__title">Портфолио</h2>
             <div class="title title_black portfolio__subtitle">Мои работы</div>
@@ -344,11 +344,21 @@
 
                 <a href="#" class="portfolio__wrapper-item"><img src="img/works/bread.jpg" alt="bread"></a>
 
-                <a href="#" class="vertical portfolio__wrapper-item"><img src="img/works/plans.jpg" alt="plans"></a>
+                <a href="#" class="vertical portfolio__wrapper-item">
+                    <picture>
+                        <source media="(max-width:1200px)" srcset="img/works/plans_mob.jpg">
+                        <img src="img/works/plans.jpg" alt="wordpress">
+                    </picture>
+                </a>
 
                 <a href="#" class="portfolio__wrapper-item"><img src="img/works/ipad.jpg" alt="ipad"></a>
 
-                <a href="#" class="horisontal portfolio__wrapper-item"><img src="img/works/wp.jpg" alt="wordpress"></a>
+                <a href="#" class="horisontal portfolio__wrapper-item">
+                    <picture>
+                        <source media="(max-width:1200px)" srcset="img/works/wp_mob.jpg">
+                        <img src="img/works/wp.jpg" alt="wordpress">
+                    </picture>
+                </a>
             </div>
         </div>
     </section>
@@ -382,7 +392,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <!-- <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
