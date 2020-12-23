@@ -1,0 +1,47 @@
+.modal {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.56);
+    visibility: hidden;
+    transition: all 0.6s;
+    &.active {
+        visibility: visible;
+    }
+
+    &__window {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 25px;
+        width: 289px;
+        min-height: 130px;
+        background: linear-gradient(104.04deg, #9896FF 0%, #D095FF 100%);
+    }
+    &__close {
+        position: absolute;
+        top: -15px;
+        right: -26px;
+        font-size: 30px;
+        color: #5E095A;
+        cursor: pointer;
+    }
+    &__subtitle {
+        color: #5E095A;
+        text-align: center;
+    }
+    &__descr {
+        font-weight: 200;
+        width: 220px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__send {
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+    }
+}

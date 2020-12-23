@@ -17,3 +17,17 @@ const numbers = document.querySelectorAll('.rating__item-number'),
 numbers.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
+
+//Modal
+
+const btn = document.querySelector('.contacts__btn'),
+    modal = document.querySelector('.modal'),
+    closeModal = document.querySelector('.modal__close');
+
+btn.addEventListener('click', () => {
+    modal.classList.add('active');
+});
+
+closeModal.addEventListener('click', () => {
+    modal.classList.remove('active');
+});
