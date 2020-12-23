@@ -17,26 +17,23 @@
         margin-top: 60px;
         display: grid;
         grid-template-columns: repeat(4, 270px);
-        grid-template-rows: repeat(2, minmax(270px, auto));
+        grid-template-rows: repeat(2, 270px);
         gap: 13px 13px;
-        grid-auto-rows: minmax(270px, auto);
+        grid-auto-rows: 270px;
     }
     &__item {
         padding: 30px 30px 25px 30px;
         border: 1px solid #000;
-        &-head {
-            margin-top: 20px;
-        }
+        display: grid;
+        grid-template: 65px minmax(125px, auto) / 1fr;
+        row-gap: 20px;
         &-body {
             margin-top: 15px;
             font-size: 12px;
             line-height: 18px;
         }
-    }
-    .margintop44 {
-        margin-top: 44px;
-    }
-    .margintop33 {
-        margin-top: 40px;
+        .jquery {
+            align-self: center;
+        }
     }
 }

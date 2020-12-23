@@ -331,16 +331,17 @@
             }
         }
         &__wrapper {
-            grid-template: 363px auto auto / 280px;
+            grid-template: 363px auto auto / 1fr;
         }
         &__photo {
-            justify-self: start;
+            justify-self: center;
         }
         &__text {
             width: 100%;
         }
         &__skills {
             grid-template-columns: 1fr;
+            justify-self: center;
         }
     }
     .resume {
