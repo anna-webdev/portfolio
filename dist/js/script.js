@@ -65,4 +65,25 @@ $(document).ready(function(){
   
       validateForms('.contacts__form');
       validateForms('#answerblank contacts__form');
+
+      $('#answerblank contacts__form').submit(function(e) {
+          e.preventDefault();
+
+          if (!$(this).valid()) {
+            return;
+          }
+
+
+          $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+          }).done(function() {
+                $(this).find("input").val("");
+
+
+                $('form').trigger('reset');
+          });
+          return false;
+      });
 });

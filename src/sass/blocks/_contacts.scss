@@ -48,6 +48,17 @@
             font-size: 12px;
             margin-bottom: 0;
         }
+        .error {
+            border: 1px solid red;
+            
+        }
+        #name-error, #mail-error {
+            position: absolute;
+            width: 250px;
+            top: 46px;
+            border: none;
+            background: none;
+        }
        }
        &__triggers {
            grid-column: 1 / 3;
