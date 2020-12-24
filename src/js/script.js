@@ -20,7 +20,7 @@ numbers.forEach((item, i) => {
 
 //Modal
 
-const btn = document.querySelector('.contacts__btn'),
+/* const btn = document.querySelector('.contacts__btn'),
     modal = document.querySelector('.modal'),
     closeModal = document.querySelector('.modal__close');
 
@@ -30,4 +30,39 @@ btn.addEventListener('click', () => {
 
 closeModal.addEventListener('click', () => {
     modal.classList.remove('active');
+}); */
+
+//Validate 
+
+$(document).ready(function(){
+    
+   
+
+    function validateForms(form){
+        $(form).validate({
+          rules: {
+            name: {
+              required: true,
+              minlength: 2
+            },
+            email: {
+              required: true,
+              email: true
+            }
+          },
+          messages: {
+            name: {
+              required: "Пожалуйста, введите свое имя",
+              minlength: jQuery.validator.format("Введите {0} символа!")
+            },
+            email: {
+              required: "Пожалуйста, введите свою почту",
+              email: "Неправильно введен адрес почты"
+            },
+          }
+      });
+      };
+  
+      validateForms('.contacts__form');
+      validateForms('#answerblank contacts__form');
 });
