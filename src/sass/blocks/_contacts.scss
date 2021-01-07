@@ -52,10 +52,18 @@
             border: 1px solid red;
             
         }
-        #name-error, #mail-error {
+        #name-error, #email-error {
             position: absolute;
             width: 250px;
             top: 46px;
+            border: none;
+            background: none;
+        }
+        #checkbox-error {
+            position: absolute;
+            width: 250px;
+            top: 35px;
+            left: 0;
             border: none;
             background: none;
         }
@@ -73,6 +81,7 @@
             font-size: 12px;
             display: flex;
             align-items: center;
+            position: relative;
        }
     &__input {
         position: relative;

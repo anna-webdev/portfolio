@@ -2,6 +2,7 @@
 
 $name = $_POST['name'];
 $email = $_POST['email'];
+$text = $_POST['text'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -31,7 +32,8 @@ $mail->Subject = 'Данные';
 $mail->Body    = '
 		Пользователь оставил данные <br> 
 	Имя: ' . $name . ' <br>
-	E-mail: ' . $email . '';
+	E-mail: ' . $email . ' <br>
+	Сообщение: ' . $text . '';
 
 if(!$mail->send()) {
     return false;

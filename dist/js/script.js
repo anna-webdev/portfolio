@@ -18,24 +18,16 @@ numbers.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
 
-//Modal
 
-/* const btn = document.querySelector('.contacts__btn'),
-    modal = document.querySelector('.modal'),
-    closeModal = document.querySelector('.modal__close');
 
-btn.addEventListener('click', () => {
-    modal.classList.add('active');
-});
-
-closeModal.addEventListener('click', () => {
-    modal.classList.remove('active');
-}); */
 
 //Validate 
 
 $(document).ready(function(){
-    
+ 
+  $('.modal__close').on('click', function() {
+    $('#modal').fadeOut('slow');
+  });
    
 
     function validateForms(form){
@@ -48,6 +40,9 @@ $(document).ready(function(){
             email: {
               required: true,
               email: true
+            },
+            checkbox: {
+              required: true
             }
           },
           messages: {
@@ -58,6 +53,9 @@ $(document).ready(function(){
             email: {
               required: "Пожалуйста, введите свою почту",
               email: "Неправильно введен адрес почты"
+            },
+            checkbox: {
+              required: "Пожалуйста, поставьте галочку"
             },
           }
       });
@@ -80,7 +78,7 @@ $(document).ready(function(){
             data: $(this).serialize()
           }).done(function() {
                 $(this).find("input").val("");
-
+                $('#modal').fadeIn('slow');
 
                 $('form').trigger('reset');
           });

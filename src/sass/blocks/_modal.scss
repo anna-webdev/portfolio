@@ -5,7 +5,6 @@
     width: 100vw;
     height: 100vh;
     background: rgba(255, 255, 255, 0.56);
-    visibility: hidden;
     transition: all 0.6s;
     &.active {
         visibility: visible;
@@ -44,4 +43,7 @@
         right: 12px;
         bottom: 12px;
     }
+}
+#modal {
+    display: none;
 }

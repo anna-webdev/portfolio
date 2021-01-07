@@ -419,14 +419,14 @@
                     <div class="title title_fs14 title_black contacts__text">
                         Или оставьте ваши данные и я сама вам напишу:
                     </div>
-                    <form action="" class="contacts__form" id="answerblank">
+                    <form action="#" class="contacts__form" id="answerblank">
                         <div class="contacts__input contacts__input-name">
                             <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
 
                         <div class="contacts__input contacts__input-mail">
-                            <input required name="email" id="mail" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="mail">Ваша почта</label>
                         </div>
 
@@ -437,7 +437,7 @@
                         <div class="contacts__triggers">
                             <button class="contacts__btn btn">Отправить сообщение</button>
                             <div class="contacts__policy">
-                                <input required type="checkbox">
+                                <input required name="checkbox" type="checkbox">
                                 <span>Я согласен(а) с <a href="/privacy.html">политикой конфиденциальности</a></span>
                             </div>
                         </div>
@@ -448,7 +448,7 @@
     </section>
 
     
-    <div class="modal">
+    <div class="modal" id="modal">
         <div class="modal__window">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle title title_black title_fs18">
