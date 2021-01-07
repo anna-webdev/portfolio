@@ -80,7 +80,7 @@ $(document).ready(function(){
                 $(this).find("input").val("");
                 $('#modal').fadeIn('slow');
 
-                $('form').trigger('reset');
+                $("form").trigger('reset');
           });
           return false;
       });
